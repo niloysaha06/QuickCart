@@ -1,4 +1,27 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  body{
+    @apply font-poppins
+  },
+  h1,h2,h3,h4,h5,h6{
+    @apply font-roboto
+  }
+}
+
+/* @layer components{
+  .size-selector input:checked + label{
+    @apply bg-rose text-white;
+  }
+} */
+
+
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +33,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
